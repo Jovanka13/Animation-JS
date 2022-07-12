@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animacije</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="section section1" onclick="animateLetters()">
+		<h1>Ovo e animiran text!</h1>
+	</div>
+
+	<div class="section section2">
+		<div id="line" class="border-line" style="width: 10%"></div>
+
+		<div class="btns">
+			<button onclick="changeLineWidth(false)">-</button>
+			<button onclick="changeLineWidth()">+</button>
+		</div>	
+		<h1>Lorem ipsum dolor</h1>
+		<div class="btns">
+			<button onclick="showImage('leftImg')">Leva slika</button>
+			<button onclick="showImage('rightImg')">Desna slika</button>
+		</div>	
+    <div class="images">
+        <img id="leftImg" src="img/car_left.jpg" class="slideFromLeft">
+        <img id="rightImg" src="img/car_right.jpg" class="slideFromRight">
+    </div>
+</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
